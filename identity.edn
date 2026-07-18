@@ -1,0 +1,3 @@
+{:identity/id :etzhayyim/tatekata
+ :identity/did "did:web:etzhayyim.com:tatekata"
+ :identity/repository "etzhayyim/com-etzhayyim-tatekata"}

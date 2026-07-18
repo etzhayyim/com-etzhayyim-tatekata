@@ -44,7 +44,7 @@
 }
 ```
 
-**Streaming**: IPFS pinning via local Kubo node, manifest.json published every 30s.
+**Streaming**: IPFS pinning via local Kubo node, `manifest.edn` published every 30s.
 
 ## Success Gate Checklist
 
@@ -78,7 +78,7 @@ Rollback does NOT reset the test pit — continue from failed pass with SME-adju
 ## Post-PoC Deliverables
 
 1. **PoC Report** (markdown): Depth vs. time graph, anomaly log, telemetry sample, sign-off
-2. **Telemetry Archive** (IPFS CID): All sensor streams pinned, manifest.json
+2. **Telemetry Archive** (IPFS CID): All sensor streams pinned, `manifest.edn`
 3. **Firmware Log**: Giemon WASM execution trace (10 Hz samples, JSON Lines format)
 4. **MST Records**: constructionProgressRecord + alert_on_anomaly (if triggered)
 5. **SME Sign-Off**: Civil engineer attestation (signature, date, conditions for R2 activation)

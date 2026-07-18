@@ -1,0 +1,7 @@
+{:actor/id :tatekata
+ :actor/glyph "建"
+ :actor/tier :tier-b
+ :actor/manifest "manifest.edn"
+ :actor/schema "schema/tatekata.edn"
+ :actor/bundle ["config" "data" "schema" "manifest.edn" "identity.edn"
+                "dependencies.edn"]}

@@ -8,8 +8,8 @@ building-stock exposure + safe-site pre-designation to sonae; consumes igata col
 |---|---|
 | Lexicons | ✅ 4 under `com.etzhayyim.tatekata.*` (siteAttestation / materialAttestation / constructionProgressRecord / safetyIncidentReport) |
 | Cells | 🟡 path-reserved (foundation → structural → MEP → finishing → commissioning, R0) |
-| Manifest | ✅ `manifest.jsonld` — `constitutionalGates` (G1–G14) + `nonGoals` (N1–N10) machine-readable |
-| Tests | ✅ **17 green** — `methods/test_charter_gates.py` (**8**, added 2026-06-16: gate set + scope non-goals + witness + material provenance + site survey + safety transparency) **+** `py/test_agent.py` (9, agent layer); `./run_tests.sh` aggregates both |
+| Manifest | ✅ `manifest.edn` — constitutional gates + non-goals, machine-readable |
+| Tests | ✅ **51 green** — standalone CLJC actor, gate, cell, and Murakumo suites via `bb test` |
 | Methods | 🟡 agent present; offline construction engine = R1 |
 
 ## Charter gates pinned by the new charter-gate test

@@ -1,0 +1,14 @@
+{:lexicon 1
+ :id "com.etzhayyim.tatekata.materialAttestation"
+ :description "Material delivery and Charter sourcing attestation."
+ :defs {:main {:type :record
+               :record {:type :object
+                        :properties {:projectId {:type :string} :batchId {:type :string}
+                                     :materialType {:type :string} :grade {:type :string}
+                                     :standard {:type :string} :quantityValue {:type :integer}
+                                     :quantityUnit {:type :string} :deliveryDate {:type :string}
+                                     :supplierName {:type :string} :qcResult {:type :string}
+                                     :attestingRobots {:type :array :items {:type :string} :min-items 2}}
+                        :required ["projectId" "batchId" "materialType" "grade" "standard"
+                                   "quantityValue" "quantityUnit" "deliveryDate" "supplierName"
+                                   "qcResult" "attestingRobots"]}}}}

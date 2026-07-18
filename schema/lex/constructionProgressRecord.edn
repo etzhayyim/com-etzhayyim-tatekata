@@ -1,0 +1,15 @@
+{:lexicon 1
+ :id "com.etzhayyim.tatekata.constructionProgressRecord"
+ :description "Construction phase boundary record."
+ :defs {:main {:type :record
+               :record {:type :object
+                        :properties {:projectId {:type :string}
+                                     :phase {:type :string}
+                                     :completionPct {:type :integer :minimum 0 :maximum 100}
+                                     :recordedDate {:type :string}
+                                     :photoCid {:type :string}
+                                     :depthMapCid {:type :string}
+                                     :anomalyFlags {:type :array :items {:type :string}}
+                                     :attestingRobots {:type :array :items {:type :string} :min-items 2}}
+                        :required ["projectId" "phase" "completionPct" "recordedDate"
+                                   "attestingRobots"]}}}}
