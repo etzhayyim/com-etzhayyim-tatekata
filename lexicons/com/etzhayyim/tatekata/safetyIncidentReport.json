@@ -1,0 +1,46 @@
+{
+  "lexicon" : 1,
+  "id" : "com.etzhayyim.tatekata.safetyIncidentReport",
+  "description" : "On-site safety incident report.",
+  "defs" : {
+    "main" : {
+      "type" : "record",
+      "record" : {
+        "type" : "object",
+        "properties" : {
+          "rootCause" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "correctiveActions" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "incidentType" : {
+            "type" : "string"
+          },
+          "escalation" : {
+            "type" : "string"
+          },
+          "incidentDate" : {
+            "type" : "string"
+          },
+          "severity" : {
+            "type" : "string"
+          },
+          "projectId" : {
+            "type" : "string"
+          },
+          "reportDate" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "projectId", "incidentDate", "reportDate", "incidentType", "severity", "description" ]
+      }
+    }
+  }
+}
